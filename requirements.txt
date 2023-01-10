@@ -4,3 +4,4 @@ sklearn
 gunicorn
 tensorflow
 keras
+wheel
