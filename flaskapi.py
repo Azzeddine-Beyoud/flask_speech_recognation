@@ -28,8 +28,8 @@ app = Flask(__name__)
 # model = load_model('/home/azzeddine/Desktop/souad_tp/models/best_model.hdf5')
 
 # Model files
-MODEL_ARCHITECTURE = '/home/azzeddine/Desktop/souad_tp/models/new_model_weight/model_adam.json'
-MODEL_WEIGHTS = '/home/azzeddine/Desktop/souad_tp/models/new_model_weight/model_weights.h5'
+MODEL_ARCHITECTURE = 'model_adam.json'
+MODEL_WEIGHTS = 'model_weights.h5'
 
 # Load the model from external files
 json_file = open(MODEL_ARCHITECTURE)
@@ -43,7 +43,7 @@ model.load_weights(MODEL_WEIGHTS)
 
 # print('Model loaded. Check http://127.0.0.1:5000/')
 
-train_audio_path = '/home/azzeddine/Desktop/souad_tp/dataset/train/train/audio'
+# train_audio_path = '/home/azzeddine/Desktop/souad_tp/dataset/train/train/audio'
 classes = ['bed','bird','cat','dog', 'down','eight','five','four', 'go', 'happy', 'house', 'left', 'marvin','nine','no',
  'off', 'on','one','right','seven', 'sheila', 'six', 'stop', 'three', 'tree', 'two', 'up', 'wow', 'yes', 'zero']
 
@@ -75,8 +75,6 @@ def index():
 
 @app.route('/predict', methods=['GET', 'POST'])
 def upload():
-    # train_audio_path = '/home/azzeddine/Desktop/souad_tp/dataset/train/train/audio'
-    # classes = os.listdir(train_audio_path)
 
     if request.method == 'POST':
 
