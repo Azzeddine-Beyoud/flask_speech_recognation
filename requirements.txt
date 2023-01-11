@@ -6,7 +6,7 @@ sklearn
 gunicorn
 tensorflow == 2.10.0
 IPython
-keras
+keras == 2.10.0
 werkzeug
 wheel
 
