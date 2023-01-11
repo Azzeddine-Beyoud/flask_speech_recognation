@@ -5,6 +5,8 @@ librosa
 sklearn
 gunicorn
 tensorflow
+IPython
 keras
+werkzeug
 wheel
 
