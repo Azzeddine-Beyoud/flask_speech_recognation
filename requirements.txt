@@ -1,8 +1,10 @@
 pip
 flask
 numpy
+librosa
 sklearn
 gunicorn
 tensorflow
 keras
 wheel
+
